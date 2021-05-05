@@ -1,5 +1,6 @@
 package xyz.teamgravity.gradientcard
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
@@ -57,6 +58,14 @@ class EditTextActivity : AppCompatActivity() {
                             }
                         }) {
                             Text(text = "Please greet me")
+                        }
+
+                        Spacer(modifier = Modifier.height(20.dp))
+
+                        Button(onClick = {
+                            startActivity(Intent(applicationContext, ConstraintActivity::class.java))
+                        }) {
+                            Text(text = "Go Constraint Activity")
                         }
                     }
                 }
