@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GradientCard">
         <activity
+            android:name=".AnimationActivity"
+            android:exported="true" />
+        <activity
             android:name=".ConstraintActivity"
             android:exported="true" />
         <activity
